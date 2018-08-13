@@ -11,5 +11,6 @@ splice reverse sort indexOf lastIndexof concat slice
 
 2) for in 打印 数组的私有属性
 
-3）for of  支持return  只打印值
+3）for of  支持return  植物
+
 

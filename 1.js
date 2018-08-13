@@ -27,6 +27,7 @@ console.log(arr1.join(''));
 //4) includes
 let arr3 = [1,2,3,4,55]
 
+
 //5) 找到具体的某一项 用find 回调函数中返回true表示找到了，找到后停止循环，找不到返回的是undefined
 
 console.log(arr3.find(function (item,index) {
@@ -40,8 +41,13 @@ console.log(arr3.find(function (item,index) {
 //7) every
 
 
-//8) reduce
+//8) reduce  s收敛 4个参数  返回的是叠加后的结果，原数组不发生变化 ，回调函数返回的结果
 
+let sum  = [1,2,3,4,5].reduce(function (prev,next,index,item) {
+    console.log(arguments);
+    return prev + next
+})
 
+console.log(sum);
 
 
