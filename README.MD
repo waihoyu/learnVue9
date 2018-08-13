@@ -13,4 +13,49 @@ splice reverse sort indexOf lastIndexof concat slice
 
 3）for of  支持return  植物
 
+reduce 实现扁平化数组
+```bash
+Vue 第一天的学习
+1）数组的相关知识点
+reduce 实现扁平化数组
+arrow fn 不具备this,arguments
+自己家没有this 就找上一级的this
+2）this的指向问题
+如何更改this指向
+1) call apply bind
+2) var that = this
+3) =>
+//如何确定this 是谁  看谁调用的 . 前面是谁this就是谁
+3）高级函数的使用
+箭头函数怎么写呢？
+去掉function关键字
+参数有一个可以省略小括号， 小括号和大括号之间有一个箭头
+如果没有大括号则直接是返回值，有大括号必须写return
+4）闭包
+函数执行的一瞬间叫闭包（不销毁的作用域），当执行后返回的结果必须是引用数据类型。
+被外界变量接受，此事这个变量不会销毁（模块化）。
+在Vue中，很多时候不能用箭头函数。
 
+5）框架和库
+框架vue
+库 jquery underscore zepto animate.css
+渐进式 渐进增强
+通过组合，完成一个完成的框架
+vuejs vuex vue-router axios
+对渐进式的理解
+声明式渲染（无需关心如何实现）
+组件系统
+客户端路由
+大规模状态管理
+构建工程
+MVVM 双向的
+
+Object.defineProperty
+
+安装vue
+使用cdn
+使用npm
+
+小胡子  moustache  表达式  可以放三元表达式、赋值、取值 三元
+
+```

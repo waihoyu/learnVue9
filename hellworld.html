@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学习vue</title>
+</head>
+<body>
+    <div id="app">
+        {{msg}}
+    </div>
+<script src="./node_modules/vue/dist/vue.js"></script>
+<script>
+    //引入vue后会白给你一个vue构造函数
+    let vm = new Vue({
+    el:"#app",
+    data:{//data中的数据会被vm所代理
+        msg:"learn vue"//可以通过vm.msg 取到对应的内容
+    }
+    })
+</script>
+</body>
+</html>

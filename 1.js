@@ -46,8 +46,11 @@ console.log(arr3.find(function (item,index) {
 let sum  = [1,2,3,4,5].reduce(function (prev,next,index,item) {
     console.log(arguments);
     return prev + next
-})
+},0)
 
 console.log(sum);
+
+//9)reduce 实现扁平化数组
+
 
 

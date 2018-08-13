@@ -1,0 +1,22 @@
+{
+  "name": "vue9",
+  "version": "1.0.0",
+  "description": "- 操作数组的方法 pop push unshift shift\r splice reverse sort indexOf lastIndexof concat slice\r 数组的变异（括号中的能改变原数组）\r ## forEach filter(过滤) map（映射） some every reduce (includes find es6)\r //怎么封装一个foreach\r //声明式  和  编程式",
+  "main": "1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waihoyu/learnVue9.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/waihoyu/learnVue9/issues"
+  },
+  "homepage": "https://github.com/waihoyu/learnVue9#readme",
+  "dependencies": {
+    "vue": "^2.5.17"
+  }
+}
