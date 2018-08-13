@@ -7,7 +7,6 @@ splice reverse sort indexOf lastIndexof concat slice
 //怎么封装一个foreach
 //声明式  和  编程式
 
-
 1）forEach 不支持return
 
 2) for in 打印 数组的私有属性
