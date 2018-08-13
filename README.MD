@@ -1,7 +1,7 @@
 
-### 自学笔记
+## 自学笔记
+### Vue 第一天的学习
 ```bash
-Vue 第一天的学习
 1）数组的相关知识点
 操作数组的方法 pop push unshift shift
 splice reverse sort indexOf lastIndexof concat slice
