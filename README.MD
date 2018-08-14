@@ -56,3 +56,32 @@ Object.defineProperty
 小胡子  moustache  表达式  可以放三元表达式、赋值、取值 三元
 
 ```
+### Vue 第一天的学习补充
+```bash
+<script>
+    let obj = {}
+    let temp = {}
+    Object.defineProperty(obj,'name',{
+        get(){//取obj的name属性会触发
+            return  temp['name']
+        },
+        set(val){
+            temp['name'] = val
+            input.value = obj.name
+        },
+        configurable:true, //是否可删除
+        //writable:true, //是否可重新赋值
+        enumerable:true,//是否可枚举
+        //value:1
+    })
+    input.value = obj.name
+    input.addEventListener('input',function () {
+        obj.name = this.value
+    })
+    //delete obj.name
+    for (let key in obj)
+    {
+        console.log(key);
+    }
+</script>
+```
