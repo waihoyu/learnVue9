@@ -8,6 +8,10 @@
     <div id="app">
         {{msg}}
         <br/><input type="text" v-model="msg">
+        <div v-text="msg">/node_modules/vue/dist/vue.js</div>
+        <!--v-once-->
+        <div v-once>{{msg}}</div>
+        <div >{{a.school}}</div>
     </div>
 <script src="./node_modules/vue/dist/vue.js"></script>
 <script>
@@ -15,9 +19,12 @@
     let vm = new Vue({
     el:"#app",
     data:{//data中的数据会被vm所代理
-        msg:"learn vue"//可以通过vm.msg 取到对应的内容
+        msg:"learn vue",//可以通过vm.msg 取到对应的内容
+        a:{}
     }
     })
+    vm.$set(vm.a,'school',1)  //此方法可以给对象添加响应式的数据变化
+
 </script>
 </body>
 </html>

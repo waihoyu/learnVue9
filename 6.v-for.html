@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <!--数组的循环-->
+    <ul>
+        <li v-for="(fruit,index) in fruits">{{index + 1}} {{fruit.name}}
+        <ul>
+            <li v-for="(_color,_index) in fruit.color">{{_color}}</li>
+        </ul>
+        </li>
+    </ul>
+</div>
+<script src="./node_modules/vue/dist/vue.js"></script>
+<script>
+    let vm = new Vue({
+        el:'#app',
+        data:{
+            fruits:[{name:'香蕉',color:['green','yellow']},{name:'苹果'},{name:'西瓜'}]
+        }
+    })
+</script>
+</body>
+</html>

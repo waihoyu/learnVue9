@@ -61,6 +61,7 @@ Object.defineProperty
 <script>
     let obj = {}
     let temp = {}
+
     Object.defineProperty(obj,'name',{
         get(){//取obj的name属性会触发
             return  temp['name']
