@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <div id="app">
+            <div @mousedown="fn1($event)">点我啊</div>
+        </div>
+        <script src="./node_modules/vue/dist/vue.js"></script>
+        <script>
+            let vm = new Vue({
+                el:'#app',
+                methods:{
+                    fn1(event){
+                        console.log(event);}
+                },
+                data:{
+                    fn(){
+                        alert(1)
+                    }
+                }
+            })
+        </script>
+    </body>
+</html>

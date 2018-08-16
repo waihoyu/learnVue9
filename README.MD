@@ -86,3 +86,45 @@ Object.defineProperty
     }
 </script>
 ```
+
+### Vue 第二天的学习
+
+1)键盘修饰符
+
+
+```bash
+
+<body>
+<div id="app">
+    <input type="text" v-model="val" @keyup.enter="add">
+    <ul>
+        <li v-for="(item,index) in arr">{{item}}<button @click="remove(index)">删除</button></li>
+    </ul>
+</div>
+<script src="./node_modules/vue/dist/vue.js"></script>
+<script>
+    let vm = new Vue({
+        el:'#app',
+        methods:{
+            add(e){
+                if (e.keyCode === 13) {
+                    this.arr.unshift(this.val)
+                    this.val = ""
+                }
+            },
+            remove(i){
+                this.arr = this.arr.filter((item,index) => {
+                    return index !== i
+                })
+            }
+        },
+        data:{
+            arr:[],
+            val:''
+        }
+    })
+</script>
+</body>
+
+
+```
